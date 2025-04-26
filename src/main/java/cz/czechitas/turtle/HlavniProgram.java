@@ -14,12 +14,10 @@ public class HlavniProgram {
 
     public void nakresliRovnostrannyTrojuhelnik(double velikostStrany, Color barvaCary) {
         zofka.setPenColor(barvaCary);
-        zofka.move(velikostStrany);
-        zofka.turnRight(120);
-        zofka.move(velikostStrany);
-        zofka.turnRight(120);
-        zofka.move(velikostStrany);
-        zofka.turnRight(120);
+        for (int i = 0; i < 3; i++) {
+            zofka.move(velikostStrany);
+            zofka.turnRight(120);
+        }
     }
 
     public void nakresliCtverec(double velikostStranyA, Color barvaCary) {
