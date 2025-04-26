@@ -79,7 +79,32 @@ public class HlavniProgram {
         nakresliRovnostrannyTrojuhelnik(100, Color.yellow);
         nakresliKolecko(5, Color.yellow);
         zofka.penUp();
-        zofka.turnRight(230);
-
-    }
+        zofka.turnRight(200);
+        zofka.move(250);
+        zofka.penDown();
+        nakresliKolecko(3, Color.blue);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(95);
+        zofka.penDown();
+        nakresliKolecko(4, Color.blue);
+        zofka.penUp();
+        zofka.turnRight(10);
+        zofka.move(25);
+        zofka.turnLeft(65);
+        zofka.move(20);
+        zofka.penDown();
+        nakresliKolecko(2, Color.blue);
+        zofka.penUp();
+        zofka.turnRight(168);
+        zofka.move(140);
+        zofka.penDown();
+        nakresliKolecko(2, Color.blue);
+        zofka.penUp();
+        zofka.turnRight(210);
+        zofka.move(78);
+        zofka.penDown();
+        nakresliKolecko(5, Color.blue);
+        zofka.penUp();
+}
 }
