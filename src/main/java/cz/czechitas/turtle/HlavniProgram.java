@@ -22,7 +22,7 @@ public class HlavniProgram {
         zofka.turnRight(120);
     }
 
-    public void nakresliCtverec(int velikostStranyA, Color barvaCary) {
+    public void nakresliCtverec(double velikostStranyA, Color barvaCary) {
         zofka.setPenColor(barvaCary);
         for (int i = 0; i < 4; i++) {
             zofka.move(velikostStranyA);
@@ -30,7 +30,7 @@ public class HlavniProgram {
         }
     }
 
-    public void nakresliObdelnik(int velikostStranyB, int velikostStranyC, Color barvaCary) {
+    public void nakresliObdelnik(double velikostStranyB, double velikostStranyC, Color barvaCary) {
         zofka.setPenColor(barvaCary);
         for (int i = 0; i < 2; i++) {
             zofka.move(velikostStranyB);
@@ -61,16 +61,25 @@ public class HlavniProgram {
     public void start() {
         //TODO Tady bude kód pro kreslení želví grafiky.
 
-        nakresliRovnostrannyTrojuhelnik(50, Color.green);
-        nakresliRovnostrannyTrojuhelnik(100, Color.blue);
-        nakresliCtverec(20, Color.yellow);
-        nakresliCtverec(50, Color.lightGray);
-        nakresliObdelnik(60, 20, Color.black);
-        nakresliObdelnik(40, 80, Color.darkGray);
-        nakresliKolecko(3, Color.red);
-        nakresliKolecko(10, Color.orange);
-        nakresliRovnoramennyPravouhlyTrojuhelnik(100, Color.green);
+        //nakresliRovnostrannyTrojuhelnik(50, Color.green);
+        //nakresliRovnostrannyTrojuhelnik(100, Color.blue);
+        //nakresliCtverec(20, Color.yellow);
+        //nakresliCtverec(50, Color.lightGray);
+        //nakresliObdelnik(60, 20, Color.black);
+        //nakresliObdelnik(40, 80, Color.darkGray);
+        //nakresliKolecko(3, Color.red);
+        //nakresliKolecko(10, Color.orange);
+        //nakresliRovnoramennyPravouhlyTrojuhelnik(100, Color.green);
+
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(280);
+        zofka.turnLeft(60);
+        zofka.penDown();
+        nakresliRovnostrannyTrojuhelnik(100, Color.yellow);
+        nakresliKolecko(5, Color.yellow);
+        zofka.penUp();
+        zofka.turnRight(230);
 
     }
-
 }
