@@ -75,6 +75,7 @@ public class HlavniProgram {
         zofka.turnLeft(90);
         zofka.move(280);
         zofka.turnLeft(60);
+
         //zmrzlina
         zofka.penDown();
         nakresliRovnostrannyTrojuhelnik(100, Color.yellow);
@@ -82,11 +83,12 @@ public class HlavniProgram {
         zofka.penUp();
         zofka.turnRight(200);
         zofka.move(250);
-        //sněhulák
         zofka.penDown();
         nakresliKolecko(3, Color.blue);
         zofka.penUp();
         zofka.turnRight(90);
+
+        //sněhulák
         zofka.move(95);
         zofka.penDown();
         nakresliKolecko(4, Color.blue);
@@ -107,6 +109,7 @@ public class HlavniProgram {
         zofka.move(78);
         zofka.penDown();
         nakresliKolecko(5, Color.blue);
+
         //mašinka
         zofka.penUp();
         zofka.turnLeft(15);
@@ -141,9 +144,8 @@ public class HlavniProgram {
         nakresliKolecko(1,Color.green);
 
         //zofka jde mimo mašinku
-        zofka.turnRight(100);
+        zofka.turnRight(105);
         zofka.penUp();
         zofka.move(150);
-
     }
 }
