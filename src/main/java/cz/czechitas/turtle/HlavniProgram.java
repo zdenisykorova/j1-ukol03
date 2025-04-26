@@ -75,12 +75,14 @@ public class HlavniProgram {
         zofka.turnLeft(90);
         zofka.move(280);
         zofka.turnLeft(60);
+        //zmrzlina
         zofka.penDown();
         nakresliRovnostrannyTrojuhelnik(100, Color.yellow);
         nakresliKolecko(5, Color.yellow);
         zofka.penUp();
         zofka.turnRight(200);
         zofka.move(250);
+        //sněhulák
         zofka.penDown();
         nakresliKolecko(3, Color.blue);
         zofka.penUp();
@@ -105,6 +107,43 @@ public class HlavniProgram {
         zofka.move(78);
         zofka.penDown();
         nakresliKolecko(5, Color.blue);
+        //mašinka
         zofka.penUp();
-}
+        zofka.turnLeft(15);
+        zofka.move(150);
+        zofka.turnRight(90);
+        zofka.penDown();
+        nakresliRovnoramennyPravouhlyTrojuhelnik(50,Color.green);
+        zofka.penUp();
+        zofka.turnLeft(225);
+        zofka.move(25);
+        zofka.turnRight(180);
+        zofka.penDown();
+        nakresliObdelnik(50,100,Color.green);
+        zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(100);
+        zofka.penDown();
+        zofka.turnLeft(90);
+        nakresliObdelnik(110,70,Color.green);
+        nakresliKolecko(3,Color.green);
+        zofka.penUp();
+        zofka.turnLeft(90);
+        zofka.move(10);
+        zofka.turnLeft(90);
+        zofka.move(20);
+        zofka.penDown();
+        nakresliKolecko(1,Color.green);
+        zofka.penUp();
+        zofka.turnRight(76);
+        zofka.move(50);
+        zofka.penDown();
+        nakresliKolecko(1,Color.green);
+
+        //zofka jde mimo mašinku
+        zofka.turnRight(100);
+        zofka.penUp();
+        zofka.move(150);
+
+    }
 }
